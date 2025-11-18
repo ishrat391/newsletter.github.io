@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yenepoya International School KSA | ICT Department Weekly Newsletter - Week of Nov 23–27, 2025</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@300;400;700&display=swap');
+        
+        body { margin:0; padding:0; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); font-family: 'Roboto', lucida handwriting, cursive; color:#eee; line-height:1.6; }
+        .container { max-width: 900px; margin: 30px auto; background: rgba(15, 32, 39, 0.95); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.6); animation: fadeIn 1.2s ease-out; }
+        @keyframes fadeIn { from {opacity:0; transform:translateY(30px);} to {opacity:1; transform:translateY(0);} }
+        
+        .header { background: linear-gradient(135deg, #003366, #0055aa); padding: 40px 20px; text-align:center; position:relative; overflow:hidden; }
+        .header::before { content:''; position:absolute; top:-50%; left:-50%; width:200%; height:200%; background: radial-gradient(circle, rgba(212,160,23,0.3) 0%, transparent 70%); animation: shimmer 8s linear infinite; }
+        @keyframes shimmer { 0% {transform: translateX(-100%) translateY(-100%) rotate(20deg);} 100% {transform: translateX(100%) translateY(100%) rotate(20deg);} }
+        .logo-rect {
+    width: 340px;           /* Adjust width as needed */
+    max-width: 90%;
+    height: auto;
+    border: 6px solid #d4a017;
+    border-radius: 12px;    /* Soft corners – change to 0px for sharp rectangle */
+    box-shadow: 0 0 30px rgba(212,160,23,0.7),
+                0 8px 25px rgba(0,0,0,0.4);
+    animation: pulse 4s infinite;
+    transition: all 0.3s ease;
+}
+
+.logo-rect:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 50px rgba(212,160,23,1);
+}
+
+@keyframes pulse {
+    0%, 100% { box-shadow: 0 0 30px rgba(212,160,23,0.7), 0 8px 25px rgba(0,0,0,0.4); }
+    50%      { box-shadow: 0 0 50px rgba(212,160,23,1), 0 12px 35px rgba(0,0,0,0.5); }
+}
+        h1 { font-family:'Orbitron', lucida handwriting, cursive; color:#d4a017; margin:15px 0 5px; font-size:2.8em; text-shadow:0 0 15px gold; animation: glow 3s infinite alternate; }
+        @keyframes glow { from {text-shadow:0 0 15px gold;} to {text-shadow:0 0 30px #ff0, 0 0 40px #ff0;} }
+        .subtitle { font-size:1.3em; color:#fff; opacity:0.9; }
+
+        .section { padding:30px; animation: fadeIn 1s ease-out; }
+        .section h2 { font-family:'Orbitron', sans-serif; color:#d4a017; text-align:center; font-size:1.8em; margin-bottom:10px solid #d4a017; padding-bottom:10px; position:relative; }
+        .section h2::after { content:''; position:absolute; bottom:-5px; left:50%; transform:translateX(-50%); width:100px; height:5px; background:gold; border-radius:3px; animation: expand 2s infinite; }
+        @keyframes expand { 0%,100% {width:100px;} 50% {width:200px;} }
+
+        .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:25px; margin-top:20px; }
+        .card { background:rgba(255,255,255,0.1); border-radius:15px; padding:20px; text-align:center; transition:0.4s; backdrop-filter:blur(10px); }
+        .card:hover { transform:translateY(-15px) scale(1.05); box-shadow:0 15px 30px rgba(212,160,23,0.4); }
+
+        .qr-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(180px,1fr)); gap:20px; margin:30px 0; }
+        .qr-item { text-align:center; animation: float 6s ease-in-out infinite; }
+        .qr-item img { width:180px; height:180px; border:4px solid #d4a017; border-radius:15px; }
+        .qr-item:nth-child(2) { animation-delay:1s; } .qr-item:nth-child(3) { animation-delay:2s; } .qr-item:nth-child(4) { animation-delay:3s; }
+        @keyframes float { 0%,100% {transform:translateY(0,0);} 50% {transform:translateY(-20px);} }
+
+        .news-item { background:rgba(255,255,255,0.08); padding:18px; border-radius:12px; margin-bottom:15px; border-left:5px solid #d4a017; transition:0.3s; }
+        .news-item:hover { background:rgba(212,160,23,0.2); }
+
+        .animated-gif { width:100%; max-width:500px; border-radius:15px; box-shadow:0 0 25px rgba(212,160,23,0.6); animation: float 8s ease-in-out infinite; }
+
+        .footer { background:#003366; padding:30px; text-align:center; color:#d4a017; font-size:1.1em; }
+        a { color:#d4a017; text-decoration:none; } a:hover { text-decoration:underline; }
+    </style>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Orbitron:wght@500;800&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+    /* Main artistic body font – elegant yet readable */
+    body { 
+        font-family: 'Rajdhani', sans-serif; 
+        font-weight: 500;
+        letter-spacing: 0.5px;
+    }
+
+    /* Fancy headings – luxurious & techy */
+    h1, h2, .neon-title, .section h2 {
+        font-family: 'Cinzel Decorative', cursive;   /* ← super artistic */
+        font-weight: 700;
+        letter-spacing: 2px;
+        background: linear-gradient(90deg, #d4a017, #fff, #d4a017);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    /* Keep Orbitron only for the typing title (futuristic feel) */
+    .typing, .static {
+        font-family: 'Orbitron', sans-serif !important;
+    }
+
+    /* Subtitles & footer – lighter artistic touch */
+    .subtitle-glow, .footer p {
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 300;
+        letter-spacing: 1px;
+    }
+
+    /* Quiz & cards – clean but artistic */
+    .card, .news-item, #techQuiz {
+        font-family: 'Rajdhani', sans-serif;
+        font-weight: 500;
+    }
+</style>
+</head>
+<body>
+<div class="header">
+    <img src="C:\Users\HP\Desktop\Newsletter\OIP.jpg" 
+         alt="Yenepoya International School Logo" 
+         class="logo-rect">
+    <h1>ICT Weekly Buzz</h1>
+    <p class="subtitle">Week #13 | Week of November 23 – 27, 2025 <br> ICT Department, Yenepoya International School KSA</p>
+</div>
+
+    <!-- Digital Competition -->
+    <div class="section">
+        <h2>Digital Innovation Competition 2025</h2>
+        <center><img src="C:\Users\HP\Desktop\Newsletter\6.jpeg" alt="Coding Competition Animation" class="animated-gif"></center>
+        <p style="text-align:center; font-size:1.3em; margin-top:20px;">
+            Get ready for the biggest ICT event of the term! Our <strong>Digital Innovation Competition</strong> runs all week (Nov 23–27).<br>
+            Themes: AI for Good │ Game Design │ Digital Art │ Robotics Challenge<br>
+            Grades 3–12 can participate! Submit Scratch projects, Canva posters, Tinkercad 3D models, or AI-generated stories.<br>
+            Prizes: Raspberry Pi kits, drones, and the legendary Golden Keyboard trophy!
+        </p>
+    </div>
+
+    <!-- Robotics & Ai EDU -->
+    <div class="section" style="background:rgba(212,160,23,0.1);">
+        <h2>Robotics × Ai EDU Platform Spotlight</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="C:\Users\HP\Desktop\Newsletter\ezgif.com-video-to-gif-converter.gif" alt="Robot Building GIF" style="width:100%; border-radius:12px;">
+                <p>Grades 3-8 are mastering the <strong>aiEDU platform</strong> (aiedu.org) this month! Students are training AI models to recognize objects, emotions, and even Saudi landmarks using Teachable Machine and creating real robotic behaviors.</p>
+            </div>
+            <div class="card">
+                <img src="C:\Users\HP\Desktop\Newsletter\ezgif.com-animated-gif-maker1.gif" alt="AI Robot GIF" style="width:100%; border-radius:12px;">
+                <p>Last week they built emotion-detecting robots that dance when you smile! This week: autonomous line-followers and AI-powered smart waste sorters.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Mini Games QR -->
+    <div class="section">
+        <h2>Scan & Play – Tech Mini-Games (Grades 3–8)</h2>
+        <p style="text-align:center;">Quick brain-break games – all educational, all fun, all safe!</p>
+        <div class="qr-grid">
+            <div class="qr-item">
+                <p><strong>Code with Anna & Elsa</strong><br>(Frozen themed coding)</p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://studio.code.org/s/frozen/stage/1/puzzle/1&size=200x200&color=003366&bgcolor=d4a017" alt="QR Code - Frozen Coding">
+            </div>
+            <div class="qr-item">
+                <p><strong>ABCya Grade 3–6 Games</strong></p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://www.abcya.com/&size=200x200&color=003366&bgcolor=d4a017" alt="QR ABCya">
+            </div>
+            <div class="qr-item">
+                <p><strong>Hour of Code Minecraft</strong></p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://studio.code.org/s/mc/stage/1/puzzle/1&size=200x200&color=003366&bgcolor=d4a017" alt="QR Minecraft Hour of Code">
+            </div>
+            <div class="qr-item">
+                <p><strong>PBS KIDS Tech Games</strong></p>
+                <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://pbskids.org/games&size=200x200&color=003366&bgcolor=d4a017" alt="QR PBS">
+            </div>
+        </div>
+    </div>
+
+    <!-- Global Tech News -->
+    <div class="section">
+        <h2>Global Tech News This Week</h2>
+        <div class="news-item">
+            <strong>🚀 Blue Origin's New Glenn Rocket</strong> successfully completed its first orbital test with NASA payloads – a massive step toward reusable heavy-lift rockets! (Reuters, Nov 2025)
+        </div>
+        <div class="news-item">
+            <strong>🇯🇵 Sakana AI</strong> (Tokyo) raised $135 million to build sovereign Japanese AI models – Japan is going all-in on independent AI tech.
+        </div>
+        <div class="news-item">
+            <strong>🤖 Huawei's Top 10 Inventions 2025</strong> event revealed breakthroughs in AI-powered networks, liquid lenses, and intelligent vehicles.
+        </div>
+        <div class="news-item">
+            <strong>🌐 OpenAI makes ChatGPT Go</strong> mode free in several countries – advanced reasoning now accessible to everyone!
+        </div>
+    </div>
+<!-- Add this NEW SECTION right before the Footer (or wherever you want it) -->
+
+<div class="section" style="background:linear-gradient(135deg, #001122, #002240);">
+    <h2>⚡ Interactive Tech Quiz – How Much Do You Know?</h2>
+    <p style="text-align:center; font-size:1.2em;">Answer all 5 questions and see your score instantly!</p>
+    
+    <div style="max-width:700px; margin:30px auto; padding:20px; background:rgba(255,255,255,0.1); border-radius:15px; backdrop-filter:blur(10px);">
+        <form id="techQuiz" style="text-align:left; font-size:1.1em;">
+            <ol>
+                <li style="margin:15px 0;">
+                    <strong>What does "AI" stand for?</strong><br>
+                    <label><input type="radio" name="q1" value="a"> Artificial Intelligence</label><br>
+                    <label><input type="radio" name="q1" value="b"> Automated Internet</label><br>
+                    <label><input type="radio" name="q1" value="c"> Advanced Interface</label>
+                </li>
+                
+                <li style="margin:15px 0;">
+                    <strong>Which company launched the New Glenn rocket this week?</strong><br>
+                    <label><input type="radio" name="q2" value="a"> SpaceX</label><br>
+                    <label><input type="radio" name="q2" value="b"> Blue Origin</label><br>
+                    <label><input type="radio" name="q2" value="c"> Rocket Lab</label>
+                </li>
+                
+                <li style="margin:15px 0;">
+                    <strong>In Scratch, what block makes a sprite move?</strong><br>
+                    <label><input type="radio" name="q3" value="a"> Motion → move 10 steps</label><br>
+                    <label><input type="radio" name="q3" value="b"> Looks → say Hello</label><br>
+                    <label><input type="radio" name="q3" value="c"> Sound → play drum</label>
+                </li>
+                
+                <li style="margin:15px 0;">
+                    <strong>Which platform are our students using to train AI models this month?</strong><br>
+                    <label><input type="radio" name="q4" value="a"> aiEDU (Teachable Machine)</label><br>
+                    <label><input type="radio" name="q4" value="b"> Scratch</label><br>
+                    <label><input type="radio" name="q4" value="c"> Tinkercad</label>
+                </li>
+                
+                <li style="margin:15px 0;">
+                    <strong>How many weeks until winter break? (as of Nov 27)</strong><br>
+                    <label><input type="radio" name="q5" value="a"> 2 weeks</label><br>
+                    <label><input type="radio" name="q5" value="b"> 3 weeks</label><br>
+                    <label><input type="radio" name="q5" value="c"> 4 weeks</label>
+                </li>
+            </ol>
+            
+            <center>
+                <button type="button" onclick="checkQuiz()" 
+                    style="background:#d4a017; color:#001122; padding:12px 30px; font-size:1.2em; border:none; border-radius:30px; cursor:pointer; margin-top:20px; box-shadow:0 5px 15px rgba(212,160,23,0.6);">
+                    Show My Score!
+                </button>
+            </center>
+        </form>
+        
+        <div id="result" style="margin-top:25px; padding:20px; background:rgba(212,160,23,0.2); border-radius:12px; font-size:1.4em; text-align:center; display:none;">
+            <strong id="scoreText"></strong><br><br>
+            <span id="message"></span>
+        </div>
+    </div>
+</div>
+
+<!-- JavaScript for the quiz (add just before </body>) -->
+<script>
+function checkQuiz() {
+    const answers = { q1:"a", q2:"b", q3:"a", q4:"a", q5:"c" }; // c = 4 weeks
+    let score = 0;
+    let total = 5;
+    
+    for (let q in answers) {
+        let selected = document.querySelector(`input[name=${q}]:checked`);
+        if (selected && selected.value === answers[q]) score++;
+    }
+    
+    const percent = Math.round((score/total)*100);
+    const resultDiv = document.getElementById("result");
+    const scoreText = document.getElementById("scoreText");
+    const message = document.getElementById("message");
+    
+    scoreText.innerHTML = `🎉 You scored ${score}/${total} (${percent}%)!`;
+    
+    if (percent === 100) message.innerHTML = "Tech Genius! 🏆";
+    else if (percent >= 80) message.innerHTML = "Excellent! Keep rocking ICT! 🚀";
+    else if (percent >= 60) message.innerHTML = "Good job! You're learning fast! 💡";
+    else message.innerHTML = "Nice try! Read the newsletter again and you'll ace it next time! 😊";
+    
+    resultDiv.style.display = "block";
+    resultDiv.scrollIntoView({ behavior: "smooth" });
+}
+</script>
+    <div style="background:#001122; color:#ccc; padding:30px 20px; text-align:center; font-size:0.95em; position:relative; overflow:hidden; border-top:4px solid #d4a017; animation: breathe 8s ease-in-out infinite;">
+    
+    <!-- Subtle moving shimmer -->
+    <div style="position:absolute; top:0; left:-100%; width:100%; height:4px; background:linear-gradient(90deg, transparent, rgba(212,160,23,0.6), transparent); animation: shimmer 6s linear infinite;"></div>
+    
+    <div style="max-width:900px; margin:0 auto;">
+        <p style="margin:8px 0; color:#fff; font-weight:600;">
+            Yenepoya International School KSA • ICT Department
+        </p>
+        <p style="margin:8px 0; opacity:0.85;">
+            <a href="https://www.yenschoolksa.com/" target="_blank" style="color:#d4a017; text-decoration:none; font-weight:500;">
+               www.yenschoolksa.com
+            </a> 
+           • Week of Nov 23–27, 2025
+        </p>
+        <p style="margin:18px 0 0; font-size:0.9em; opacity:0.7;">
+            © 2025 Yenepoya International School • 
+            <span style="color:#d4a017; font-weight:500;">Keep Coding.</span>
+        </p>
+    </div>
+</div>
+
+<!-- Keep these animations in your <style> -->
+<style>
+@keyframes breathe {
+    0%, 100% { background:#001122; }
+    50%      { background:#00182a; }
+}
+@keyframes shimmer {
+    0%   { left:-100%; }
+    100% { left:100%; }
+}
+</style>
+</div>
+</div>
+</body>
+</html>
